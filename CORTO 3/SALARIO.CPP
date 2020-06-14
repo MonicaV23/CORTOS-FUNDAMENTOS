@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
       
-/*El ejercicio nos dice que tenemos una empresa y se desea calcular el salario mensual de los empleados.*/
+/*El ejercicio nos dice que tenemos una empresa y se desea 
+calcular el salario mensual de los empleados.*/
   float Salario(int empleados,int horas, int extras){
     float DESCUENTOS=0, SalTotal,SalReal,empleado=0;
     //Se ha determinado que las variables sean tipo float por los decimales//

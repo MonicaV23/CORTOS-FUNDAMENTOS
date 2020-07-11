@@ -10,7 +10,7 @@ struct costoPorArticulo
     float costoPorArticulo;
 };
 
-void lectura(int x, costoPorArticulo Articulo[300])
+void lectura(int x, costoPorArticulo Articulo[300]) /*Funcion utilizada para la lectura de los datos correspondientes*/
 {
     int i;
     for (i = 0; i < x; i++)
@@ -26,7 +26,8 @@ void lectura(int x, costoPorArticulo Articulo[300])
              << endl;
     }
 }
-void calculo(int x, costoPorArticulo Articulo[300])
+void calculo(int x, costoPorArticulo Articulo[300])/*Funcion utilizada para el calculo del precio por articulo
+dependiendo de la cantidad especificada*/
 {
     int i;
     for (i = 0; i < x; i++)
@@ -34,7 +35,8 @@ void calculo(int x, costoPorArticulo Articulo[300])
         Articulo[i].costoPorArticulo = Articulo[i].cantidad * Articulo[i].precio;
     }
 }
-void despliegue(int x, costoPorArticulo Articulo[300])
+void despliegue(int x, costoPorArticulo Articulo[300])/*En esta funcion se desplegaran
+todos los valores y datos de la facturacion, basandonos en el struct. detallado anteriormente*/
 {
     int i;
     for (i = 0; i < x; i++)
@@ -46,7 +48,8 @@ void despliegue(int x, costoPorArticulo Articulo[300])
              << endl;
     }
 }
-float retornarValor(int x, costoPorArticulo Articulo[300])
+float retornarValor(int x, costoPorArticulo Articulo[300])/*Funcion que nos dara como resultado 
+el total a pagar*/
 {
     float TOTAL = 0;
     int i;
@@ -74,6 +77,6 @@ int main()
     lectura(x, FACTURACION);
     calculo(x, FACTURACION);
     despliegue(x, FACTURACION);
-    cout << " El total a pagar es: " << retornarValor(x, FACTURACION)<< endl;
+    cout << " El total a pagar es: " << retornarValor(x, FACTURACION) << endl;
     return 0;
 }
